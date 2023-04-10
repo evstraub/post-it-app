@@ -9,9 +9,10 @@ const [user] =useAuthState(auth)
 // console.log(user)
 
   return (
-    <div>
+    <div className='container'>
       <Navbar />
       {user ? <Chat /> : null}
+      
     </div>
   );
 }

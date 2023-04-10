@@ -8,7 +8,7 @@ const Navbar = () => {
     const [user] = useAuthState(auth)
     console.log(user)
   return (
-    <div>Navbar {user ? <LogOut/> : <SignIn/>}
+    <div className='nav'> {user ? <LogOut/> : <SignIn/>}
         
     </div>
   )
